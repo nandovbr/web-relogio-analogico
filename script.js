@@ -3,12 +3,12 @@ const PONTEIROMINUTO = document.querySelector("#minute");
 const PONTEIROSEGUNDO = document.querySelector("#second");
 
 let data = new Date();
-console.log(data);
+// console.log(data);
 
 let hora = data.getHours();
 let minuto = data.getMinutes();
 let segundo = data.getSeconds();
-console.log("Horas: " + hora, "Minutos: " + minuto, "Segundos: " + segundo);
+// console.log("Horas: " + hora, "Minutos: " + minuto, "Segundos: " + segundo);
 
 let posicaoHora = (hora * 360 / 12) + (minuto * (360 / 60) / 12);
 let posicaoMinuto = (minuto * 360 / 60) + (segundo * (360 / 60) / 60);
